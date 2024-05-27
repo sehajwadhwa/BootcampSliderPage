@@ -1,0 +1,89 @@
+@use "./global.scss" as *;
+@use "./partials/typography" as *;
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+
+main {
+  padding: 1rem;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url("../images/pattern-bg.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 51vh;
+      width: 90vw;
+
+      &--display {
+        padding-top: 1.72rem;
+        max-width: 73%;
+
+        border-radius: 8px;
+        //    box-shadow: 3px 3px 7px 12px rgba(110, 108, 108, 0.5);
+      }
+
+      &--button {
+        position: absolute;
+        border: none;
+
+        bottom: 48%;
+        // border: 0.1px solid gray;
+        border-radius: 30px;
+        padding: 0.2rem 0.3rem;
+        background-color: white;
+
+        button {
+          background: transparent;
+          border: none;
+          outline: none;
+          margin: 0.5rem;
+          // padding: 1rem;
+
+          :hover {
+            transform: scale(1.4);
+            transition: 1s;
+          }
+        }
+      }
+    }
+    &__statement {
+      background: url("../images/pattern-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--des {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-family: Inter-Semi;
+        color: black;
+        text-align: center;
+        margin: 1.5rem;
+      }
+      &--author {
+        font-size: 1.1rem;
+        font-family: Inter-Bold;
+      }
+      &--designation {
+        font-family: Inter-Normal;
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        color: $gray-blue;
+      }
+    }
+  }
+}
+.footer-image {
+  width: 100%;
+  position: absolute;
+}

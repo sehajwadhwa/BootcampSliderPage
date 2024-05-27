@@ -1,18 +1,24 @@
-@use './partials/fonts' as *;
-@use './partials/mixins' as *;
-@use './partials/variables' as *;
+@use "./partials/typography" as *;
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
 
-
-
-html, body, main, section, footer, h1, h2, h3, h5, img {
+html,
+body,p,
+main,
+section,
+footer,
+h1,
+h2,
+h3,
+h5,
+img {
   margin: 0;
   padding: 0;
 }
 
-
-li{
+li {
   list-style: none;
 }
-body{
+body {
   font-size: 2rem;
 }
