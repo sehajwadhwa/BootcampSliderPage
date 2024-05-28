@@ -43,6 +43,10 @@ body {
 
 main {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main .hero {
   display: flex;
@@ -54,6 +58,9 @@ main .hero {
   main .hero {
     flex-direction: row-reverse;
     gap: 0;
+    flex: 1;
+    padding: 0 3rem;
+    justify-content: center;
   }
 }
 main .hero__container {
@@ -70,28 +77,37 @@ main .hero__container {
 }
 @media (min-width: 1440px) {
   main .hero__container {
-    height: auto;
+    min-width: 60%;
+    margin-top: 6rem;
   }
 }
 main .hero__container--display {
   margin-top: 1.5rem;
   width: 60%;
 }
+@media (min-width: 1440px) {
+  main .hero__container--display {
+    margin-top: 3rem;
+  }
+}
 main .hero__container--display img {
   border-radius: 8px;
   box-shadow: 10px 25px 10px rgba(44, 44, 44, 0.2);
   max-width: 100%;
-}
-@media (min-width: 1440px) {
-  main .hero__container--display img {
-    width: 100%;
-  }
 }
 main .hero__container--button {
   position: absolute;
   bottom: -4%;
   border-radius: 30px;
   background-color: white;
+  box-shadow: 10px 10px 10px rgba(44, 44, 44, 0.2);
+}
+@media (min-width: 1440px) {
+  main .hero__container--button {
+    bottom: 3%;
+    left: 25%;
+    padding: 0.7rem;
+  }
 }
 main .hero__container--button button {
   background: transparent;
@@ -119,9 +135,10 @@ main .hero__statement {
 }
 @media (min-width: 1440px) {
   main .hero__statement {
-    flex: 1;
-    justify-content: center;
-    margin-top: 7rem;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 4rem;
+    margin-top: 14rem;
     background-size: 7rem;
   }
 }
@@ -135,13 +152,34 @@ main .hero__statement--des {
 }
 @media (min-width: 1440px) {
   main .hero__statement--des {
-    font-size: 2rem;
-    margin-left: 4rem;
+    font-size: 2.2rem;
+    margin: 5rem 0 0 0;
+    text-align: left;
+    line-height: 2.6rem;
+    position: absolute;
+    left: 8%;
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  main .hero__statement__credentials {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: flex-start;
+    position: absolute;
+    left: 8%;
+    top: 50%;
   }
 }
 main .hero__statement--author {
   font-size: 1.1rem;
   font-family: Inter-Bold;
+}
+@media (min-width: 1440px) {
+  main .hero__statement--author {
+    font-size: 1.5rem;
+  }
 }
 main .hero__statement--role {
   font-family: Inter-Normal;
@@ -149,14 +187,46 @@ main .hero__statement--role {
   margin-top: 0.2rem;
   color: hsl(240, 18%, 77%);
 }
+@media (min-width: 1440px) {
+  main .hero__statement--role {
+    font-size: 1.5rem;
+  }
+}
 main .footer-image {
   width: 100%;
+}
+@media (min-width: 1440px) {
+  main .footer-image {
+    height: 20vh;
+  }
 }
 main .previous--img {
   width: 70%;
   padding-bottom: 0.2rem;
 }
+@media (min-width: 1440px) {
+  main .previous--img {
+    width: 100%;
+    margin-left: 0.2rem;
+  }
+}
 main .next--img {
   width: 70%;
   padding-bottom: 0.2rem;
+}
+@media (min-width: 1440px) {
+  main .next--img {
+    width: 100%;
+    margin-left: 0.2rem;
+  }
+}
+@media (min-width: 1440px) {
+  main button.previous {
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  main button.next {
+    padding-left: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
