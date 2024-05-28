@@ -57,8 +57,8 @@ main .hero__container {
   margin: auto;
 }
 main .hero__container--display {
-  margin-top: 1.5rem;
-  width: 65%;
+  margin-top: 1.56rem;
+  width: 70%;
 }
 main .hero__container--display img {
   border-radius: 8px;
