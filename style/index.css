@@ -36,12 +36,13 @@ body {
 }
 
 main {
-  padding: 1rem;
+  width: 100%;
 }
 main .hero {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  margin-top: 2rem;
 }
 main .hero__container {
   display: flex;
@@ -51,18 +52,22 @@ main .hero__container {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 51vh;
+  position: relative;
   width: 90vw;
+  margin: auto;
 }
 main .hero__container--display {
-  padding-top: 1.72rem;
-  max-width: 73%;
+  margin-top: 1.5rem;
+  width: 65%;
+}
+main .hero__container--display img {
   border-radius: 8px;
+  max-width: 100%;
 }
 main .hero__container--button {
   position: absolute;
-  border: none;
-  bottom: 48%;
+  border: 1px solid gray;
+  bottom: -9%;
   border-radius: 30px;
   padding: 0.2rem 0.3rem;
   background-color: white;
@@ -104,8 +109,6 @@ main .hero__statement--designation {
   margin-top: 0.2rem;
   color: hsl(240, 18%, 77%);
 }
-
-.footer-image {
+main .footer-image {
   width: 100%;
-  position: absolute;
 }/*# sourceMappingURL=index.css.map */

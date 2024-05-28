@@ -4,11 +4,12 @@
 @use "./partials/variables" as *;
 
 main {
-  padding: 1rem;
+  width: 100%;
   .hero {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    margin-top: 2rem;
 
     &__container {
       display: flex;
@@ -18,23 +19,23 @@ main {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      height: 51vh;
+      position: relative;
       width: 90vw;
-
+      margin: auto;
       &--display {
-        padding-top: 1.72rem;
-        max-width: 73%;
-
-        border-radius: 8px;
-        //    box-shadow: 3px 3px 7px 12px rgba(110, 108, 108, 0.5);
+        margin-top: 1.5rem;
+        width: 65%;
+        img {
+          border-radius: 8px;
+          max-width: 100%;
+        }
       }
 
       &--button {
         position: absolute;
-        border: none;
+        border: 1px solid gray;
+        bottom: -9%;
 
-        bottom: 48%;
-        // border: 0.1px solid gray;
         border-radius: 30px;
         padding: 0.2rem 0.3rem;
         background-color: white;
@@ -44,7 +45,6 @@ main {
           border: none;
           outline: none;
           margin: 0.5rem;
-          // padding: 1rem;
 
           :hover {
             transform: scale(1.4);
@@ -82,8 +82,7 @@ main {
       }
     }
   }
-}
-.footer-image {
-  width: 100%;
-  position: absolute;
+  .footer-image {
+    width: 100%;
+  }
 }

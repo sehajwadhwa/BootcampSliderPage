@@ -15,7 +15,8 @@ const array = [
   },
 ];
 
-const imageDisplay = document.querySelector(".hero__container--display");
+const image = document.querySelector(".hero__container--display");
+const imageDisplay=image.querySelector(".hero__container--display--image")
 const button=document.querySelector(".hero__container--button")
 const prevButton = button.querySelector(".prev--button");
 const nextButton = button.querySelector(".next--button");
