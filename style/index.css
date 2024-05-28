@@ -62,21 +62,20 @@ main .hero__container--display {
 }
 main .hero__container--display img {
   border-radius: 8px;
+  box-shadow: 10px 25px 10px rgba(44, 44, 44, 0.2);
   max-width: 100%;
 }
 main .hero__container--button {
   position: absolute;
-  border: 1px solid gray;
-  bottom: -9%;
+  bottom: -4%;
   border-radius: 30px;
-  padding: 0.2rem 0.3rem;
   background-color: white;
 }
 main .hero__container--button button {
   background: transparent;
   border: none;
   outline: none;
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 main .hero__container--button button :hover {
   transform: scale(1.4);
@@ -111,4 +110,12 @@ main .hero__statement--designation {
 }
 main .footer-image {
   width: 100%;
+}
+main .previous--img {
+  width: 70%;
+  padding-bottom: 0.2rem;
+}
+main .next--img {
+  width: 70%;
+  padding-bottom: 0.2rem;
 }/*# sourceMappingURL=index.css.map */

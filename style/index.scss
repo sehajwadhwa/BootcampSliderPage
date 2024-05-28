@@ -22,29 +22,31 @@ main {
       position: relative;
       width: 90vw;
       margin: auto;
+
       &--display {
         margin-top: 1.5rem;
         width: 65%;
         img {
           border-radius: 8px;
+          box-shadow: 10px 25px 10px rgba(44, 44, 44, 0.2);
           max-width: 100%;
         }
       }
 
       &--button {
         position: absolute;
-        border: 1px solid gray;
-        bottom: -9%;
+
+        bottom: -4%;
 
         border-radius: 30px;
-        padding: 0.2rem 0.3rem;
+
         background-color: white;
 
         button {
           background: transparent;
           border: none;
           outline: none;
-          margin: 0.5rem;
+          margin: 0.3rem;
 
           :hover {
             transform: scale(1.4);
@@ -84,5 +86,13 @@ main {
   }
   .footer-image {
     width: 100%;
+  }
+  .previous--img {
+    width: 70%;
+    padding-bottom: 0.2rem;
+  }
+  .next--img {
+    width: 70%;
+    padding-bottom: 0.2rem;
   }
 }
