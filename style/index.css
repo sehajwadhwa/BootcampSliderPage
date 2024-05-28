@@ -13,6 +13,12 @@
   src: url("../../font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
   font-weight: 700;
 }
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 html,
 body, p,
 main,
@@ -44,6 +50,12 @@ main .hero {
   gap: 2.5rem;
   margin-top: 2rem;
 }
+@media (min-width: 1440px) {
+  main .hero {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+}
 main .hero__container {
   display: flex;
   flex-direction: column;
@@ -53,17 +65,27 @@ main .hero__container {
   background-size: contain;
   background-position: center;
   position: relative;
-  width: 90vw;
-  margin: auto;
+  width: 100%;
+  height: 50vh;
+}
+@media (min-width: 1440px) {
+  main .hero__container {
+    height: auto;
+  }
 }
 main .hero__container--display {
   margin-top: 1.5rem;
-  width: 65%;
+  width: 60%;
 }
 main .hero__container--display img {
   border-radius: 8px;
   box-shadow: 10px 25px 10px rgba(44, 44, 44, 0.2);
   max-width: 100%;
+}
+@media (min-width: 1440px) {
+  main .hero__container--display img {
+    width: 100%;
+  }
 }
 main .hero__container--button {
   position: absolute;
@@ -76,10 +98,15 @@ main .hero__container--button button {
   border: none;
   outline: none;
   margin: 0.3rem;
+  transition: all 2s;
+  opacity: 1;
 }
 main .hero__container--button button :hover {
   transform: scale(1.4);
   transition: 1s;
+}
+main .hero__container--button button.hidden {
+  opacity: 0;
 }
 main .hero__statement {
   background: url("../images/pattern-quotes.svg");
@@ -90,6 +117,14 @@ main .hero__statement {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1440px) {
+  main .hero__statement {
+    flex: 1;
+    justify-content: center;
+    margin-top: 7rem;
+    background-size: 7rem;
+  }
+}
 main .hero__statement--des {
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -97,6 +132,12 @@ main .hero__statement--des {
   color: black;
   text-align: center;
   margin: 1.5rem;
+}
+@media (min-width: 1440px) {
+  main .hero__statement--des {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
 }
 main .hero__statement--author {
   font-size: 1.1rem;
