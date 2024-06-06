@@ -39,7 +39,7 @@ prevButton.addEventListener("click", () => {
   if (current !== 0) {
     current--;
     show(current);
-  }
+  } 
 });
 nextButton.addEventListener("click", () => {
   if (current !== array.length - 1) {
