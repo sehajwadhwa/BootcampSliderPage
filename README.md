@@ -38,8 +38,8 @@ transform(scale 0.8)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sehajwadhwa/BootcampSliderPage)
-- Live Site URL: [Add live site URL here](https://bootslider.netlify.app/)
+- Solution URL: https://github.com/sehajwadhwa/BootcampSliderPage
+- Live Site URL: https://bootslider.netlify.app/
 
 
 
