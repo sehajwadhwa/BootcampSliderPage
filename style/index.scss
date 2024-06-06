@@ -11,6 +11,19 @@ main {
     gap: 2.5rem;
     margin-top: 2rem;
 
+    @include laptop {
+      flex-direction: row-reverse;
+      padding: 0 3rem;
+      gap:0;
+    }
+    @include desktop {
+      flex-direction: row-reverse;
+      gap: 0;
+      flex: 1.5;
+      padding: 0 3rem;
+      justify-content: center;
+    }
+
     &__container {
       display: flex;
       flex-direction: column;
@@ -21,14 +34,30 @@ main {
       background-position: center;
       position: relative;
       width: 90vw;
-      //height:51vh;
-      margin: auto;
-      &--display {
-        margin-top: 1.56rem;
+      height: 51vh;
+      @include desktop {
         width: 70%;
+        margin-top: 6rem;
+      }
+      @include laptop{
+        flex:1;
+      }
+      &--display {
+        width: 80%;
+        margin:auto;
+        @include desktop {
+          margin:auto;
+        }
+        @include laptop{
+          margin:auto;
+          width:65%;
+        }
         img {
           border-radius: 8px;
-          max-width: 100%;
+          box-shadow: 10px 25px 10px rgba(44, 44, 44, 0.2);
+          max-width: 95%;
+          margin-top: 1rem;
+        
         }
       }
 
@@ -36,10 +65,13 @@ main {
         position: absolute;
         border: 1px solid gray;
         bottom: -9%;
-
         border-radius: 30px;
         padding: 0.2rem 0.3rem;
         background-color: white;
+        @include desktop {
+          left: 14%;
+          bottom: 1%;
+        }
 
         button {
           background: transparent;
@@ -62,7 +94,17 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      @include desktop {
+        width: 100%;
+        margin-left: 4rem;
+        margin-top: 14rem;
+        background-size: 7rem;
+      }
+@include laptop{
+  margin:auto;
+  flex: 1;
+ 
+}
       &--des {
         font-size: 1.1rem;
         line-height: 1.5rem;
@@ -70,16 +112,55 @@ main {
         color: black;
         text-align: center;
         margin: 1.5rem;
+        @include desktop {
+          font-size: 2.1rem;
+          margin: 3rem 0 0 0;
+          text-align: left;
+          line-height: 2.6rem;
+          position: absolute;
+          left: 18%;
+          width: 50%;
+        }
+        @include laptop{
+          position:absolute;
+          left:21%;
+          width:40%;
+          top:20%;
+          margin:0;
+        }
+      }
+      &__credentials {
+        @include desktop {
+          display: flex;
+          gap: 1rem;
+          justify-content: flex-start;
+          position: absolute;
+          left: 18%;
+          top: 59%;
+        }
+        @include laptop{
+          position:absolute;
+          left:21%;
+          width:40%;
+          top:35%;
+          text-align: center;
+        }
       }
       &--author {
         font-size: 1.1rem;
         font-family: Inter-Bold;
+        @include desktop {
+          font-size: 1.5rem;
+        }
       }
-      &--designation {
+      &--role {
         font-family: Inter-Normal;
         font-size: 1rem;
         margin-top: 0.2rem;
         color: $gray-blue;
+        @include desktop {
+          font-size: 1.5rem;
+        }
       }
     }
   }
