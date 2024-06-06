@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Inter-Semi";
+  src: url("../../font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter-Normal";
+  src: url("../../font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../../font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 700;
+}
+html,
+body, p,
+main,
+section,
+footer,
+h1,
+h2,
+h3,
+h5,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+  main .hero {
+    flex-direction: row-reverse;
+    padding: 0 3rem;
+    gap: 0;
+  }
+}
+@media (min-width: 1440px) {
+  main .hero {
+    flex-direction: row-reverse;
+    gap: 0;
+    flex: 1.5;
+    padding: 0 3rem;
+    justify-content: center;
+  }
+}
+main .hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  width: 90vw;
+  height: 51vh;
+}
+@media (min-width: 1440px) {
+  main .hero__container {
+    width: 70%;
+    margin-top: 6rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+  main .hero__container {
+    flex: 1;
+  }
+}
+main .hero__container--display {
+  width: 80%;
+  margin: auto;
+}
+@media (min-width: 1440px) {
+  main .hero__container--display {
+    margin: auto;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+  main .hero__container--display {
+    margin: auto;
+    width: 65%;
+  }
+}
+main .hero__container--display img {
+  border-radius: 8px;
+  box-shadow: 10px 25px 10px rgba(44, 44, 44, 0.2);
+  max-width: 95%;
+  margin-top: 1rem;
+}
+main .hero__container--button {
+  position: absolute;
+  border: 1px solid gray;
+  bottom: -9%;
+  border-radius: 30px;
+  padding: 0.2rem 0.3rem;
+  background-color: white;
+}
+@media (min-width: 1440px) {
+  main .hero__container--button {
+    left: 14%;
+    bottom: 1%;
+  }
+}
+main .hero__container--button button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+}
+main .hero__container--button button :hover {
+  transform: scale(1.4);
+  transition: 1s;
+}
+main .hero__statement {
+  background: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  main .hero__statement {
+    width: 100%;
+    margin-left: 4rem;
+    margin-top: 14rem;
+    background-size: 7rem;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+  main .hero__statement {
+    margin: auto;
+    flex: 1;
+  }
+}
+main .hero__statement--des {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-family: Inter-Semi;
+  color: black;
+  text-align: center;
+  margin: 1.5rem;
+}
+@media (min-width: 1440px) {
+  main .hero__statement--des {
+    font-size: 2.1rem;
+    margin: 3rem 0 0 0;
+    text-align: left;
+    line-height: 2.6rem;
+    position: absolute;
+    left: 18%;
+    width: 50%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+  main .hero__statement--des {
+    position: absolute;
+    left: 21%;
+    width: 40%;
+    top: 20%;
+    margin: 0;
+  }
+}
+@media (min-width: 1440px) {
+  main .hero__statement__credentials {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    position: absolute;
+    left: 18%;
+    top: 59%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1439px) {
+  main .hero__statement__credentials {
+    position: absolute;
+    left: 21%;
+    width: 40%;
+    top: 35%;
+    text-align: center;
+  }
+}
+main .hero__statement--author {
+  font-size: 1.1rem;
+  font-family: Inter-Bold;
+}
+@media (min-width: 1440px) {
+  main .hero__statement--author {
+    font-size: 1.5rem;
+  }
+}
+main .hero__statement--role {
+  font-family: Inter-Normal;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  color: hsl(240, 18%, 77%);
+}
+@media (min-width: 1440px) {
+  main .hero__statement--role {
+    font-size: 1.5rem;
+  }
+}
+main .footer-image {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
